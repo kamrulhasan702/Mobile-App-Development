@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Grade Report"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name: John Doe"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student ID: 123456" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semester: Spring 2026" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department: CSE" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:background="#3B82F6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obtained"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grade"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#F9FAFB">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Math"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="85"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:gravity="center"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#E5E7EB">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physics"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="72"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B+"
+                    android:gravity="center"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#FEE2E2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"
+                    android:gravity="center"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#D1FAE5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:text="Total: 3 | Passed: 2 | Failed: 1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="10dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/gpaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPA: 3.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/subjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject Name" />
+
+            <EditText
+                android:id="@+id/obtainedMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Obtained Marks"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/totalMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Marks"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Subject" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print / Share" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FB"
+    android:padding="8dp">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#1E88E5"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back"
+            android:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btnForward"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_media_next"
+            android:background="@android:color/transparent"
+            android:contentDescription="Forward"
+            android:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btnRefresh"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_popup_sync"
+            android:background="@android:color/transparent"
+            android:contentDescription="Refresh"
+            android:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_view"
+            android:background="@android:color/transparent"
+            android:contentDescription="Home"
+            android:tint="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Address Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <EditText
+            android:id="@+id/etUrl"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Enter website URL"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textUri"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:text="Go" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Shortcut Buttons -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnYoutube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YouTube"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnWikipedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wikipedia"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnKhanAcademy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khan Academy"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnUniversity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- WebView -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+</LinearLayout>

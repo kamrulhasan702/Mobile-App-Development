@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Book"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFFFFF"/>
+
+    <!-- Search -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:queryHint="Search contacts..."
+        android:iconifiedByDefault="false"
+        android:background="#FFFFFF"/>
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listViewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchView"
+        android:layout_above="@id/fabAdd"
+        android:divider="#E5E7EB"
+        android:dividerHeight="1dp"
+        android:padding="6dp"/>
+
+    <!-- Empty Text -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No contacts found"
+        android:textSize="18sp"
+        android:textColor="#6B7280"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#2563EB"
+        app:tint="#FFFFFF"/>
+
+    <!-- 👇 Sample Row Design (for UI only preview) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="#2563EB"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:text="John Doe"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:text="+880123456789"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
